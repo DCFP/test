@@ -11,8 +11,8 @@ module.exports = () => {
             //BkiY0tdvyG
             //clientID: process.env.NAVER_ID,
             //clientSecret: process.env.NAVER_SECRET,
-            clientID: 'bqHG9uZsn_LwDr6lctBM',
-            clientSecret: 'BkiY0tdvyG',
+            clientID: '97xJuKjigFyloJGyzTt_',
+            clientSecret: 'sfaWkJqXAl',
             callbackURL: '/auth/naver/callback',
          },
          async (accessToken, refreshToken, profile, done) => {
