@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+    {% if user and user.id %}
+        <div style="text-align: center; margin-top: 50px;">
+            <p>이름: <span>{{user.name}}</span></p>
+            <p>이메일: <span>{{user.email}}</span></p>
+            <p>userid: <span>{{user.userid}}</span></p>
+            <p>snsId: <span>{{user.snsId}}</span></p>
+            <p>provider: <span>{{user.provider}}</span></p>
+            <p>createdAt: <span>{{user.createdAt}}</span></p>
+        </div>
+        <div style="margin-top:400px;"><br></div>
+    {% else %}
+        로그인 해주세요
+    {% endif %}
+{% endblock %}
